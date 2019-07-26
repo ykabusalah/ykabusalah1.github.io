@@ -1,0 +1,58 @@
+.ns-landing-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .owner-block{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 2;
+  }
+  .owner-intro-block {
+
+    .owner-intro {
+      &__photo {
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        border-radius: 50%;
+        background: $grey;
+      }
+
+      &__text {
+        font-size: 75px;
+
+        &, &-tagline {
+          color: $tint-grey;
+        }
+
+        &-tagline {
+          font-size: 55px;
+        }
+      }
+    }
+  }
+
+  .social-links{
+
+    &__menu-wrapper{
+      display: flex;
+      padding-left: 0;
+      list-style: none;
+      justify-content: center;
+
+      .menu-item{
+        position: relative;
+        margin: 20px;
+
+        &__link{
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}

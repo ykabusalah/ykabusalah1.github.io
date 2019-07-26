@@ -1,0 +1,23 @@
+.ns-forum-index {
+
+  .forum-header-text{
+    margin-bottom: 30px;
+    >svg {
+      height: 50px;
+      width: 50px;
+    }
+  }
+
+  .questions-wrapper {
+    padding-top: 20px;
+    background: $white;
+  }
+
+  .portfolio-item {
+
+    .card{
+      border-bottom: 1px solid $light-grey;
+      padding: 10px 0;
+    }
+  }
+}
