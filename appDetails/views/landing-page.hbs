@@ -1,0 +1,68 @@
+<html>
+    {{>head}}
+    <body>
+        <div class="ns-landing-page container">
+            <svg id="tween-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" style="width: 1440px;height: 798px;">
+                <circle fill="#F3FFBD" cx="263.33070400683164" cy="162.1935971885903" r="18.643616362802195"
+                        style="opacity: 1;"></circle>
+                <circle fill="#007bff" cx="933.9956132888634" cy="219.04183821666788" r="17.285903716708834"
+                        style="opacity: 1;"></circle>
+                <circle fill="#FF1654" cx="502.22837264530256" cy="164.11247914096901" r="25.027488224478237"
+                        style="opacity: 1;"></circle>
+                <circle fill="#FF1654" cx="1283.039742495279" cy="120.052207755579" r="19.026092239984973"
+                        style="opacity: 1;"></circle>
+                <circle fill="#007bff" cx="681.8168747368262" cy="201.89515092564085" r="29.550200006706245"
+                        style="opacity: 1;"></circle>
+                <circle fill="#B2DBBF" cx="1015.474724533679" cy="467.4613384200446" r="22.15813713562713"
+                        style="opacity: 0.00411516;"></circle>
+                <circle fill="#F3FFBD" cx="896.2663536253045" cy="585.4612915432053" r="20.544973024008723"
+                        style="opacity: 1;"></circle>
+                <circle fill="#F3FFBD" cx="944.6007961522374" cy="634.020150226301" r="16.832955638001177"
+                        style="opacity: 1;"></circle>
+                <circle fill="#FF1654" cx="707.6139046634739" cy="656.1409087119109" r="13.937852805499398"
+                        style="opacity: 0.545559;"></circle>
+                <circle fill="#F3FFBD" cx="753.9173950577879" cy="460.51985605668705" r="16.82400280718718"
+                        style="opacity: 1;"></circle>
+                <circle fill="#007bff" cx="1061.3612037433873" cy="630.0666317659709" r="26.778581713525075"
+                        style="opacity: 0.410271;"></circle>
+                <circle fill="#B2DBBF" cx="629.9793745326602" cy="316.81306187166274" r="30.977515652329686"
+                        style="opacity: 1;"></circle>
+                <circle fill="#B2DBBF" cx="1346.2785553685644" cy="643.6566844861952" r="34.83486521683916"
+                        style="opacity: 0.828286;"></circle>
+                <circle fill="#FF1654" cx="1206.940704881282" cy="670.7909986176634" r="30.627593503896993"
+                        style="opacity: 0.7257;"></circle>
+                <circle fill="#B2DBBF" cx="1065.9602791268426" cy="98.06388187807657" r="21.353128101986815"
+                        style="opacity: 0.289597;"></circle>
+                <circle fill="#FF1654" cx="288.62537629364215" cy="280.4935364155186" r="27.744912705903534"
+                        style="opacity: 1;"></circle>
+                <circle fill="#FF1654" cx="631.8453131249094" cy="96.07109135609858" r="30.183721068032895"
+                        style="opacity: 0.774175;"></circle>
+                <circle fill="#F3FFBD" cx="533.3894071220541" cy="655.1194935931766" r="24.78231749979315"
+                        style="opacity: 0.275588;"></circle>
+                <circle fill="#70C1B3" cx="511.3997388470994" cy="487.1296374662877" r="34.01778569069263"
+                        style="opacity: 0.0538999;"></circle>
+                <circle fill="#70C1B3" cx="1122.6154127294255" cy="729.6343387403828" r="23.19384528919133"
+                        style="opacity: 1;"></circle>
+            </svg>
+            <div class="owner-block">
+                <div class="owner-intro-block">
+                    <img class="owner-intro__photo" src="https://www.tunnelbear.com/static/img/free@2x.6e0ebdb.png" alt="photo_of_a_bear">
+                    <h1 class="owner-intro__text">Hi! I'm a bear</h1>
+                    <h3 class="owner-intro__text-tagline">Click on the links below to learn about me</h3>
+                </div>
+                {{#if socialLinks}}
+                    <div class="social-links">
+                        <ul class="social-links__menu-wrapper">
+                            {{#each socialLinks}}
+                                <li class="menu-item">
+                                    <a class="menu-item__link btn btn-lg btn-outline-primary" href="{{this.link}}">{{this.name}}</a>
+                                </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                {{/if}}
+            </div>
+        </div>
+        <script src="/js/landing.bundle.js" type="text/javascript"></script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<div class="container ns-profile-page">
+    <div class="row">
+        {{#if profile}}
+            <div class="col-md-12">
+                <h1 class="profile-page-text">{{>profile-svg-icon}} <span>Profile</span></h1>
+                <h3>Hi! {{profile.full_name}}, your questions are here</h3>
+            </div>
+
+            {{#if profile.questions}}
+                <div class="questions-wrapper col-md-12">
+                    <div class="row">
+                        {{#profile.questions}}
+                            <!-- Project Two -->
+                            <div class="col-md-12">
+                                <a href="{{../forumBaseUrl}}/view-question/{{this.id}}">{{this.title}}</a>
+                                <h4>{{moment this.created_at "fromNow"}}</h4>
+                            </div>
+                            <!-- /.row -->
+                        {{/profile.questions}}
+                    </div>
+                </div>
+            {{/if}}
+        {{else}}
+            <div class="col-md-12">
+                <h3>An error occurred fetching your profile :(, try reloading the page</h3>
+            </div>
+        {{/if}}
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        {{#if question}}
+            <div class="col-md-12">
+                <h2>{{question.title}}</h2>
+                <h6>Uploaded by <b>{{question.user.full_name}}</b> ∙ <span>about {{moment question.created_at "fromNow"}}</span></h6>
+            </div>
+            <div class="col-md-12">
+                <p>{{question.description}}</p>
+            </div>
+        {{else}}
+            <h3>No question data</h3>
+        {{/if}}
+    </div>
+</div>
