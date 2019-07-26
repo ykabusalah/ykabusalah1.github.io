@@ -1,0 +1,34 @@
+// this is placed here so we can override some bootstrap variable declaration with ours
+@import "utils/variables";
+
+// Import bootstrap dependencies
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities/flex";
+@import "bootstrap/scss/utilities/float";
+@import "bootstrap/scss/utilities/display";
+@import "bootstrap/scss/utilities/screenreaders";
+
+
+// Bootstrap Grid
+@import "bootstrap/scss/grid";
+
+// Bootstrap components
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/pagination";
+
+// globals
+@import "globals";
+
+// layout
+@import "layout/main";
+
+//pages
+@import "pages/landing";
+@import "pages/forum-index";
+@import "pages/forum-profile-page";
