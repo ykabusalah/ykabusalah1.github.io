@@ -1,0 +1,30 @@
+// Colors
+$teal: #95c4c6;
+$success: #22AF8F;
+$green: #11B892;
+$red: #fc123c;
+$ox-red: #471432;
+$white: #FFFFFF;
+$whiteSmoke: #f4f4f4;
+$black: #2b3133;
+$light-grey: #f0f3f5;
+$tint-grey: #7c7b8b;
+$grey: #d8d8d8;
+$light-brown: #d6c9ab;
+$mustard: #cbad59;
+$blueish-black: #4B586B;
+$blueish-purple: #0545A1;
+
+
+// Override Bootstrap style for anchor elements.
+$link-color:                $green !default;
+$link-decoration:           none !default;
+$link-hover-color:          darken($link-color, 15%) !default;
+$link-hover-decoration:     underline !default;
+//$body-color:                $green !default;
+
+// Font
+$global-weight-bold: 600;
+$global-weight-medium: 500;
+
+$primary-font: 'HKGrotesk', 'proxima-nova', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
