@@ -1,0 +1,15 @@
+<form action="{{forumBaseUrl}}/create-question" method="post">
+    <div class="form-group form-row">
+        <div class="col-6">
+            <label for="questionTitle">Question Title</label>
+            <input name="title" type="text" class="form-control" id="questionTitle" placeholder="Ask me anything?">
+        </div>
+    </div>
+    <div class="form-group form-row">
+        <div class="col-6">
+            <label for="questionDescription">Question Body</label>
+            <textarea name="description" class="form-control" id="questionDescription" rows="3">...</textarea>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit Question</button>
+</form>
